@@ -7,7 +7,6 @@ export class Analyzer implements WordFrequencyAnalyzer {
     calculateHighestFrequency(text: string): number {
         const words = splitText(text)
         const result = mostFrequentWord(words)
-        console.debug('calculateHighestFrequency result', result)
 
         return result.length >= 1 ? result[0].getFrequency() : -1
     }
@@ -24,7 +23,6 @@ export class Analyzer implements WordFrequencyAnalyzer {
     calculateMostFrequentNWords(text: string, n: number): WordFrequency[] {
         const words = splitText(text)
         const result = mostFrequentNWords(n)(words)
-        console.debug('calculateMostFrequentNWords result', result)
 
         return result
     }
