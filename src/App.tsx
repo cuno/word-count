@@ -27,7 +27,7 @@ function App() {
   }, [text, limit])
 
   return (
-    <div className="App">{limit}
+    <div className="App">
       <header className="App-header">
         <div className="Form-part">Maximum number of results (n):&nbsp;
         <input type="number" value={limit} onChange={handleNChange}></input></div>
